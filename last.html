@@ -1,0 +1,543 @@
+<!DOCTYPE html> <html lang="en"> <head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Some Memories 💗</title>
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        min-height: 100vh;
+
+        background:
+            linear-gradient(
+                135deg,
+                #fff0f6,
+                #eee9ff,
+                #fff6e8
+            );
+
+        background-size: 300% 300%;
+
+        animation:
+            gradient 15s ease infinite;
+
+        font-family:
+            'Quicksand',
+            sans-serif;
+
+        color: #5e5160;
+
+    }
+
+    @keyframes gradient {
+
+        0%,100% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+    }
+
+    .memories {
+
+        max-width: 1100px;
+
+        margin: auto;
+
+        padding:
+            90px 25px;
+
+        text-align: center;
+
+    }
+
+    .tag {
+
+        color: #c27aa0;
+
+        letter-spacing: 4px;
+
+        font-size: .75rem;
+
+        margin-bottom: 15px;
+
+    }
+
+    h1 {
+
+        font-family:
+            'Dancing Script',
+            cursive;
+
+        color: #ff69b4;
+
+        font-size:
+            clamp(3rem,7vw,5.5rem);
+
+        margin-bottom: 20px;
+
+    }
+
+    .intro {
+
+        max-width: 650px;
+
+        margin: auto;
+
+        line-height: 1.8;
+
+        color: #756879;
+
+    }
+
+    .memory-grid {
+
+        margin-top: 60px;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(
+                3,
+                1fr
+            );
+
+        gap: 25px;
+
+    }
+
+    .memory {
+
+        background:
+            rgba(255,255,255,.75);
+
+        padding: 15px;
+
+        border-radius: 22px;
+
+        box-shadow:
+            0 20px 50px
+            rgba(100,70,100,.12);
+
+        transition:
+            transform .4s;
+
+    }
+
+    .memory:hover {
+
+        transform:
+            translateY(-10px)
+            rotate(1deg);
+
+    }
+
+    .memory img {
+
+        width: 100%;
+
+        height: 300px;
+
+        object-fit: cover;
+
+        border-radius: 15px;
+
+    }
+
+    .memory h3 {
+
+        font-family:
+            'Dancing Script',
+            cursive;
+
+        font-size: 1.8rem;
+
+        color: #ff69b4;
+
+        margin:
+            15px 0 5px;
+
+    }
+
+    .memory p {
+
+        font-size: .9rem;
+
+        line-height: 1.6;
+
+        padding-bottom: 10px;
+
+    }
+
+
+    /* SECRET SECTION */
+
+    .secret {
+
+        margin-top: 120px;
+
+        padding:
+            70px 25px;
+
+        border-radius: 35px;
+
+        background:
+            rgba(255,255,255,.45);
+
+        backdrop-filter:
+            blur(20px);
+
+        border:
+            1px solid
+            rgba(255,255,255,.8);
+
+    }
+
+    .secret-small {
+
+        color: #9c8398;
+
+        font-size: .8rem;
+
+        letter-spacing: 3px;
+
+        text-transform: uppercase;
+
+    }
+
+    .secret h2 {
+
+        font-family:
+            'Dancing Script',
+            cursive;
+
+        color: #7e6579;
+
+        font-size:
+            clamp(2.2rem,5vw,4rem);
+
+        margin:
+            15px 0;
+
+    }
+
+    .secret p {
+
+        max-width: 600px;
+
+        margin: auto;
+
+        line-height: 1.8;
+
+    }
+
+    #heartReveal {
+
+        margin-top: 35px;
+
+        padding:
+            18px 32px;
+
+        border: none;
+
+        border-radius: 100px;
+
+        color: white;
+
+        font-size: 1rem;
+
+        font-weight: 600;
+
+        background:
+            linear-gradient(
+                135deg,
+                #ff6f9f,
+                #bd7aff
+            );
+
+        box-shadow:
+            0 10px 35px
+            rgba(255,105,180,.35);
+
+        cursor: pointer;
+
+        transition:
+            transform .3s,
+            box-shadow .3s;
+
+    }
+
+    #heartReveal:hover {
+
+        transform:
+            scale(1.08);
+
+        box-shadow:
+            0 15px 45px
+            rgba(255,105,180,.55);
+
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:800px) {
+
+        .memory-grid {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+        .memory img {
+
+            height: 350px;
+
+        }
+
+    }
+
+</style>
+
+</head> <body>
+<main class="memories">
+
+    <div class="tag">
+        ✦ LITTLE MEMORIES ✦
+    </div>
+
+    <h1>
+        Our Beautiful Moments
+    </h1>
+
+    <p class="intro">
+
+        Every laugh, every random conversation,
+        every little moment has its own place
+        in my memory.
+
+        <br><br>
+
+        And honestly...
+
+        I'm really glad our paths crossed. 💗
+
+    </p>
+
+
+    <section class="memory-grid">
+
+        <article class="memory">
+
+            <img
+                src="d1.jpg"
+                alt="Memory">
+
+            <h3>
+                That Smile
+            </h3>
+
+            <p>
+                Some smiles just stay in your
+                memory a little longer.
+            </p>
+
+        </article>
+
+
+        <article class="memory">
+
+            <img
+                src="d2.jpg"
+                alt="Memory">
+
+            <h3>
+                Good Vibes
+            </h3>
+
+            <p>
+                Somehow the simplest moments
+                become the ones we remember.
+            </p>
+
+        </article>
+
+
+        <article class="memory">
+
+            <img
+                src="d3.jpg"
+                alt="Memory">
+
+            <h3>
+                Pretty Soul
+            </h3>
+
+            <p>
+                Keep being the person who makes
+                the world around her brighter.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- SECRET DOOR -->
+
+    <section class="secret">
+
+        <div class="secret-small">
+            before you leave...
+        </div>
+
+        <h2>
+            There's one more thing.
+        </h2>
+
+        <p>
+            I've shown you the birthday wishes.
+            I've shown you the memories.
+
+            <br><br>
+
+            But maybe...
+
+            there's one little part of this
+            website you haven't seen yet.
+        </p>
+
+        <button id="heartReveal">
+            Wanna see what's inside my heart? ♡
+        </button>
+
+    </section>
+
+</main>
+
+
+<script>
+
+    const reveal =
+        document.getElementById(
+            "heartReveal"
+        );
+
+    reveal.addEventListener(
+        "click",
+        () => {
+
+            const flash =
+                document.createElement(
+                    "div"
+                );
+
+            flash.style.position =
+                "fixed";
+
+            flash.style.inset = "0";
+
+            flash.style.background =
+                "#fff";
+
+            flash.style.zIndex =
+                "9999";
+
+            flash.style.pointerEvents =
+                "none";
+
+            document.body.appendChild(
+                flash
+            );
+
+
+            const heart =
+                document.createElement(
+                    "div"
+                );
+
+            heart.innerHTML = "♥";
+
+            heart.style.position =
+                "fixed";
+
+            heart.style.left =
+                "50%";
+
+            heart.style.top =
+                "50%";
+
+            heart.style.transform =
+                "translate(-50%,-50%) scale(0)";
+
+            heart.style.fontSize =
+                "15rem";
+
+            heart.style.color =
+                "#ff477e";
+
+            heart.style.zIndex =
+                "10000";
+
+            heart.style.textShadow =
+                "0 0 80px #ff477e";
+
+            document.body.appendChild(
+                heart
+            );
+
+
+            gsap.timeline()
+
+                .to(flash, {
+                    opacity: 0,
+                    duration: .7,
+                    ease: "power2.out"
+                })
+
+                .to(heart, {
+                    scale: 1,
+                    duration: .7,
+                    ease: "back.out(2)"
+                })
+
+                .to(heart, {
+                    scale: 30,
+                    opacity: 0,
+                    duration: 1.1,
+                    ease: "power4.in",
+                    onComplete: () => {
+                        window.location.href =
+                            "love.html";
+                    }
+                });
+
+        }
+    );
+
+</script>
+
+</body> </html>
